@@ -6,86 +6,86 @@ option('frida_version',
 
 option('graft_tool',
   type: 'feature',
-  value: 'disabled',  # 不需要 gum-graft 工具，禁用
+  value: 'disabled',
   description: 'Build gum-graft tool',
 )
 
 option('diet',
   type: 'boolean',
-  value: true,  # 启用优化以最小化体积
+  value: true,
   description: 'Optimize for minimal footprint'
 )
 
 option('allocator',
   type: 'combo',
   choices: ['auto', 'internal', 'system'],
-  value: 'auto',  # 默认即可，auto 会根据目标平台选择最佳分配器
+  value: 'auto',
   description: 'Which memory allocator to use'
 )
 
 option('jailbreak',
   type: 'feature',
-  value: 'disabled',  # 不需要越狱相关集成，禁用
+  value: 'disabled',
   description: 'Include jailbreak-specific integrations'
 )
 
 option('gumpp',
   type: 'feature',
-  value: 'enabled',  # 不需要 C++ 绑定，禁用
+  value: 'disabled',
   description: 'Build C++ bindings'
 )
 
 option('gumjs',
   type: 'feature',
-  value: 'enabled',  # 需要 JavaScript 绑定，启用
+  value: 'enabled',
   description: 'Build JavaScript bindings'
 )
 
 option('quickjs',
   type: 'feature',
-  value: 'enabled',  # 使用 QuickJS 运行时
+  value: 'enabled',
   description: 'Build JavaScript bindings with QuickJS runtime included'
 )
 
 option('v8',
   type: 'feature',
-  value: 'disabled',  # 禁用 V8，减少体积
+  value: 'disabled',
   description: 'Build JavaScript bindings with V8 runtime included'
 )
 
 option('database',
   type: 'feature',
-  value: 'enabled',  # 不需要数据库 API，禁用
+  value: 'enabled',
   description: 'Build JavaScript bindings with Database API included'
 )
 
 option('frida_objc_bridge',
   type: 'feature',
-  value: 'disabled',  # 不需要 ObjC 桥接，禁用
+  value: 'disabled',
   description: 'Build JavaScript bindings with ObjC bridge included'
 )
 
 option('frida_swift_bridge',
   type: 'feature',
-  value: 'disabled',  # 不需要 Swift 桥接，禁用
+  value: 'disabled',
   description: 'Build JavaScript bindings with Swift bridge included'
 )
 
 option('frida_java_bridge',
   type: 'feature',
-  value: 'auto',  # 不需要 Java 桥接，禁用
+  value: 'auto',
   description: 'Build JavaScript bindings with Java bridge included'
 )
 
 option('devkits',
   type: 'array',
   choices: ['gum', 'gumjs'],
-  value: ['gumjs'],  # 仅保留 gumjs
+  value: [],
   description: 'Devkits to build'
 )
 
 option('tests',
   type: 'feature',
-  value: 'auto',  # 不需要测试，禁用
+  value: 'auto',
   description: 'Build tests'
 )
