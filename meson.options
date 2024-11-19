@@ -55,19 +55,19 @@ option('v8',
 
 option('database',
   type: 'feature',
-  value: 'enabled',
+  value: 'disabled',
   description: 'Build JavaScript bindings with Database API included'
 )
 
 option('frida_objc_bridge',
   type: 'feature',
-  value: 'gumjs',
+  value: 'disabled',
   description: 'Build JavaScript bindings with ObjC bridge included'
 )
 
 option('frida_swift_bridge',
   type: 'feature',
-  value: 'gumjs',
+  value: 'disabled',
   description: 'Build JavaScript bindings with Swift bridge included'
 )
 
