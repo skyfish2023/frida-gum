@@ -31,7 +31,7 @@ option('jailbreak',
 
 option('gumpp',
   type: 'feature',
-  value: 'disabled',  # 不需要 C++ 绑定，禁用
+  value: 'enabled',  # 不需要 C++ 绑定，禁用
   description: 'Build C++ bindings'
 )
 
@@ -55,7 +55,7 @@ option('v8',
 
 option('database',
   type: 'feature',
-  value: 'disabled',  # 不需要数据库 API，禁用
+  value: 'enabled',  # 不需要数据库 API，禁用
   description: 'Build JavaScript bindings with Database API included'
 )
 
@@ -73,7 +73,7 @@ option('frida_swift_bridge',
 
 option('frida_java_bridge',
   type: 'feature',
-  value: 'disabled',  # 不需要 Java 桥接，禁用
+  value: 'auto',  # 不需要 Java 桥接，禁用
   description: 'Build JavaScript bindings with Java bridge included'
 )
 
