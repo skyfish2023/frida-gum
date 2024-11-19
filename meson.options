@@ -37,7 +37,7 @@ option('gumpp',
 
 option('gumjs',
   type: 'feature',
-  value: 'enabled',
+  value: 'disabled',
   description: 'Build JavaScript bindings'
 )
 
