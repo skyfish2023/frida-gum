@@ -31,13 +31,13 @@ option('jailbreak',
 
 option('gumpp',
   type: 'feature',
-  value: 'enabled',
+  value: 'auto',
   description: 'Build C++ bindings'
 )
 
 option('gumjs',
   type: 'feature',
-  value: 'enabled',
+  value: 'auto',
   description: 'Build JavaScript bindings'
 )
 
