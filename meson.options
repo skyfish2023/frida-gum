@@ -86,6 +86,6 @@ option('devkits',
 
 option('tests',
   type: 'feature',
-  value: 'disabled',  # 不需要测试，禁用
+  value: 'auto',  # 不需要测试，禁用
   description: 'Build tests'
 )
