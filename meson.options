@@ -6,13 +6,13 @@ option('frida_version',
 
 option('graft_tool',
   type: 'feature',
-  value: 'auto',
+  value: 'disabled',
   description: 'Build gum-graft tool',
 )
 
 option('diet',
   type: 'boolean',
-  value: true,
+  value: false,
   description: 'Optimize for minimal footprint'
 )
 
@@ -25,19 +25,19 @@ option('allocator',
 
 option('jailbreak',
   type: 'feature',
-  value: 'auto',
+  value: 'disabled',
   description: 'Include jailbreak-specific integrations'
 )
 
 option('gumpp',
   type: 'feature',
-  value: 'disabled',
+  value: 'enabled',
   description: 'Build C++ bindings'
 )
 
 option('gumjs',
   type: 'feature',
-  value: 'disabled',
+  value: 'enabled',
   description: 'Build JavaScript bindings'
 )
 
@@ -61,13 +61,13 @@ option('database',
 
 option('frida_objc_bridge',
   type: 'feature',
-  value: 'auto',
+  value: 'gumjs',
   description: 'Build JavaScript bindings with ObjC bridge included'
 )
 
 option('frida_swift_bridge',
   type: 'feature',
-  value: 'auto',
+  value: 'gumjs',
   description: 'Build JavaScript bindings with Swift bridge included'
 )
 
