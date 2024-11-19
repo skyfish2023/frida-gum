@@ -9,7 +9,7 @@ on:
       - main
 
 env:
-  GUM_OPTIONS: '--enable-gumjs --with-devkits=gumjs  --enable-tests'
+  GUM_OPTIONS: '--disable-frida-objc-bridge --disable-v8 --enable-diet --disable-graft-tool --enable-gumjs --with-devkits=gumjs --disable-tests --disable-symbols'
 
 jobs:
   gir:
