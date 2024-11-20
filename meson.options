@@ -12,7 +12,7 @@ option('graft_tool',
 
 option('diet',
   type: 'boolean',
-  value: true,
+  value: false,
   description: 'Optimize for minimal footprint'
 )
 
@@ -73,7 +73,7 @@ option('frida_swift_bridge',
 
 option('frida_java_bridge',
   type: 'feature',
-  value: 'auto',
+  value: 'disabled',
   description: 'Build JavaScript bindings with Java bridge included'
 )
 
