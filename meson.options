@@ -12,7 +12,7 @@ option('graft_tool',
 
 option('diet',
   type: 'boolean',
-  value: false,
+  value: true,
   description: 'Optimize for minimal footprint'
 )
 
